@@ -1,8 +1,18 @@
 <script>
-export default {};
+import AppHeader from "./components/AppHeader.vue";
+export default {
+  components: {
+    AppHeader,
+  },
+};
 </script>
 <template>
-  <h1 className="text-red-500 text-3xl font-bold">Hello, Vue.js!</h1>
+  <div id="app">
+    <AppHeader />
+    <div class="container mt-3 flex justify-center">
+      <router-view />
+    </div>
+  </div>
 </template>
 <style>
 .page {
