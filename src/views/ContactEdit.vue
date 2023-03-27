@@ -51,6 +51,7 @@ export default {
         console.log(error);
       }
     },
+    
     async deleteContact() {
       if (confirm("Bạn muốn xóa Liên hệ này?")) {
         try {
